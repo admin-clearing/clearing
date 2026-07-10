@@ -1,0 +1,91 @@
+---
+interface Props {
+  title?: string;
+  showDomainBar?: boolean;
+}
+const {
+  title = 'Clearing — AI news, translated for your job',
+  showDomainBar = true,
+} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-row">
+    <a class="logo" href="/">
+      <span class="logo-mark">●</span>
+      <span class="logo-text">Clear<span class="logo-accent">ing</span></span>
+    </a>
+    <nav class="primary-nav">
+      <a href="/">Pulse</a>
+      <a href="/">Fintech</a>
+      <a href="/">HR &amp; People</a>
+      <a href="/">Research</a>
+      <a href="/">Marketing</a>
+      <a href="/">Explainers</a>
+      <a href="/">Archive</a>
+    </nav>
+    <button class="subscribe-btn">Subscribe</button>
+  </div>
+
+  {showDomainBar && (
+    <div class="domain-bar">
+      <span class="domain-label">Read as:</span>
+      <div class="domain-pills" role="tablist" aria-label="Filter by profession">
+        <button class="pill active" data-domain="all">Everyone</button>
+        <button class="pill" data-domain="fintech">Fintech</button>
+        <button class="pill" data-domain="hr">HR &amp; People</button>
+        <button class="pill" data-domain="research">Research</button>
+        <button class="pill" data-domain="marketing">Marketing</button>
+      </div>
+    </div>
+  )}
+</header>
+
+<div class="ticker-wrap" aria-label="Latest updates">
+  <span class="ticker-tag"><span class="dot"></span> LIVE PULSE</span>
+  <div class="ticker-track">
+    <div class="ticker-content" id="tickerContent"></div>
+  </div>
+</div>
+
+<slot />
+
+<footer class="site-footer">
+  <p>Clearing — AI news, translated for your job.</p>
+</footer>
+
+<script is:inline>
+  const tickerItems = [
+    { label: 'SONNET 5',   text: 'Now default for all Free & Pro users · 1M token context' },
+    { label: 'FINTECH',    text: 'Governance framework scores banking AI on 8 variables' },
+    { label: 'RESEARCH',   text: 'MoE routing sparsity: 40% FLOP reduction without accuracy drop' },
+    { label: 'REGULATORY', text: 'FTC signals AI accuracy is becoming a compliance issue' },
+    { label: 'PRICING',    text: 'GPT-5.6 preview: cheaper variant matches last quarter flagship' },
+    { label: 'HR',         text: 'Explainability and reversibility headed for hiring-tool checklists' },
+    { label: 'RESEARCH',   text: 'Speculative decoding with draft-model alignment hits near-lossless 3× speed' },
+  ];
+
+  function renderTicker() {
+    const el = document.getElementById('tickerContent');
+    if (!el) return;
+    const html = tickerItems.map(i => `<span><b>${i.label}</b> — ${i.text}</span>`).join('');
+    el.innerHTML = html + html;
+  }
+
+  document.addEventListener('DOMContentLoaded', renderTicker);
+</script>
+
+</body>
+</html>

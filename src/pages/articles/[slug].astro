@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles.map(article => ({
+    params: { slug: article.slug },
+    props: {
+      article,
+      related: articles
+        .filter(a => a.slug !== article.slug)
+        .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+        .slice(0, 4),
+    },
+  }));
+}
+
+const { article, related } = Astro.props;
+const { Content } = await article.render();
+
+const domainClass = (d: string) => d === 'all' ? 'general' : d;
+const domainLabel = (d: string) => ({
+  fintech: 'Fintech Cut', hr: 'HR Cut', marketing: 'Marketing Cut',
+  research: 'Research Cut', all: 'The Pulse',
+}[d] ?? 'The Pulse');
+
+const dateStr = article.data.date.toLocaleDateString('en-US', {
+  month: 'long', day: 'numeric', year: 'numeric',
+});
+---
+
+<Base title={`${article.data.title} — Clearing`} showDomainBar={false}>
+  <div class="article-wrap">
+
+    <article class="article-main">
+      <a href="/" class="back-link">← Back to Clearing</a>
+
+      <div class={`media-placeholder ${article.data.gradient} article-hero-img`}></div>
+
+      <div class="article-meta">
+        <span class={`kicker ${domainClass(article.data.domain)}`}>
+          {domainLabel(article.data.domain)}
+        </span>
+        <span class="meta-time">{article.data.readTime} min read · {dateStr}</span>
+      </div>
+
+      <h1 class="article-title">{article.data.title}</h1>
+      <p class="article-dek">{article.data.dek}</p>
+      <div class="article-byline">By {article.data.author}</div>
+
+      <div class="prose">
+        <Content />
+      </div>
+    </article>
+
+    <aside class="article-sidebar">
+      <p class="sidebar-title">More stories</p>
+      <ul class="sidebar-list">
+        {related.map(art => (
+          <li>
+            <span class={`kicker ${domainClass(art.data.domain)} tiny`}>
+              {domainLabel(art.data.domain).replace(' Cut', '')}
+            </span>
+            <a href={`/articles/${art.slug}`}>
+              <h4>{art.data.title}</h4>
+            </a>
+            <span class="meta-time">{art.data.readTime} min read</span>
+          </li>
+        ))}
+      </ul>
+    </aside>
+
+  </div>
+</Base>

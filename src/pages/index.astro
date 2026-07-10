@@ -1,0 +1,145 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const allArticles = await getCollection('articles');
+const sorted = allArticles.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const featured = sorted.find(a => a.data.featured && a.data.domain === 'fintech')
+  ?? sorted.find(a => a.data.featured)
+  ?? sorted[0];
+
+const secondary = sorted.filter(a => a.slug !== featured.slug).slice(0, 2);
+const listArticles = sorted.filter(a => a.slug !== featured.slug && !secondary.find(s => s.slug === a.slug));
+const trending = [...sorted].sort((a, b) => b.data.relevance - a.data.relevance).slice(0, 7);
+
+const domainClass = (d: string) => d === 'all' ? 'general' : d;
+const domainLabel = (d: string) => ({
+  fintech: 'Fintech Cut', hr: 'HR Cut', marketing: 'Marketing Cut',
+  research: 'Research Cut', all: 'The Pulse',
+}[d] ?? 'The Pulse');
+
+const feedItems = [
+  { source: 'Reuters',         time: '4m ago',  text: 'Anthropic expands enterprise admin controls with spend alerts.' },
+  { source: 'arXiv',           time: '12m ago', text: 'New paper: KV cache eviction guided by expert co-activation patterns in MoE models.' },
+  { source: 'The Information', time: '18m ago', text: 'Frontier lab exploring custom silicon partnership.' },
+  { source: 'FT',              time: '31m ago', text: 'White House nears voluntary standards for model releases.' },
+  { source: 'Bloomberg',       time: '52m ago', text: 'VC funding for AI infra hits record share of H1 total.' },
+  { source: 'TechCrunch',      time: '1h ago',  text: 'Open-weight model release matches closed frontier on reasoning.' },
+];
+---
+
+<Base>
+<main class="content-grid">
+
+  <!-- HERO -->
+  <section class="hero-col">
+    <article class="hero-story" data-domain={featured.data.domain} data-relevance={featured.data.relevance}>
+      <div class="hero-media">
+        <a href={`/articles/${featured.slug}`}>
+          <div class={`media-placeholder ${featured.data.gradient}`}></div>
+        </a>
+        <span class="relevance-badge">
+          <span class="meter"><i></i><i></i><i></i><i></i><i></i></span>
+          Highly relevant
+        </span>
+      </div>
+      <div class="hero-body">
+        <div class="kicker-row">
+          <span class={`kicker ${domainClass(featured.data.domain)}`}>{domainLabel(featured.data.domain)}</span>
+          <span class="meta-time">{featured.data.readTime} min read · Today</span>
+        </div>
+        <h1 class="hero-headline">
+          <a href={`/articles/${featured.slug}`}>{featured.data.title}</a>
+        </h1>
+        <p class="hero-dek">{featured.data.dek}</p>
+        <div class="byline">By {featured.data.author}</div>
+      </div>
+    </article>
+
+    <div class="secondary-grid">
+      {secondary.map(art => (
+        <article class="card" data-domain={art.data.domain} data-relevance={art.data.relevance}>
+          <a href={`/articles/${art.slug}`}>
+            <div class={`media-placeholder ${art.data.gradient} small`}></div>
+          </a>
+          <span class={`kicker ${domainClass(art.data.domain)}`}>{domainLabel(art.data.domain)}</span>
+          <h3><a href={`/articles/${art.slug}`}>{art.data.title}</a></h3>
+          <p class="meta-time">{art.data.readTime} min read</p>
+        </article>
+      ))}
+    </div>
+
+    <div class="story-list">
+      {listArticles.map(art => (
+        <article class="list-row" data-domain={art.data.domain} data-relevance={art.data.relevance}>
+          <span class={`kicker ${domainClass(art.data.domain)}`}>{domainLabel(art.data.domain)}</span>
+          <h4><a href={`/articles/${art.slug}`}>{art.data.title}</a></h4>
+          <span class="meta-time">{art.data.readTime} min read</span>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- TRENDING RAIL -->
+  <aside class="trending-col">
+    <h2 class="rail-title">Top Stories</h2>
+    <ol class="trending-list">
+      {trending.map((art, i) => (
+        <li data-domain={art.data.domain}>
+          <span class="rank">{i + 1}</span>
+          <div>
+            <span class={`kicker ${domainClass(art.data.domain)} tiny`}>
+              {domainLabel(art.data.domain).replace(' Cut', '')}
+            </span>
+            <h4><a href={`/articles/${art.slug}`}>{art.data.title}</a></h4>
+            <span class="meta-time">{art.data.readTime} min read</span>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </aside>
+
+  <!-- LIVE FEED -->
+  <aside class="feed-col">
+    <div class="feed-header">
+      <span class="dot"></span>
+      <h2>Live Feed</h2>
+      <a href="#" class="view-all">View all</a>
+    </div>
+    <ul class="feed-list">
+      {feedItems.map(item => (
+        <li>
+          <span class="feed-time">{item.time}</span>
+          <span class="feed-source">{item.source}</span>
+          {item.text}
+        </li>
+      ))}
+    </ul>
+    <div class="ad-slot"><span>Ad slot — reserved for sponsorships</span></div>
+  </aside>
+
+</main>
+</Base>
+
+<script is:inline>
+  function initDomainFilter() {
+    const pills = document.querySelectorAll('.pill');
+    const items = document.querySelectorAll('[data-domain]');
+    if (!pills.length || !items.length) return;
+
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        pills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        const domain = pill.dataset.domain;
+        items.forEach(item => {
+          const match = domain === 'all' || item.dataset.domain === 'all' || item.dataset.domain === domain;
+          item.classList.toggle('filtered-out', !match);
+        });
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initDomainFilter);
+</script>
