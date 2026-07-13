@@ -1,0 +1,17 @@
+---
+title: "LieBN: Batch Normalization over Lie Groups"
+dek: "arXiv:2607.08783v1 Announce Type: new Abstract: Manifold-valued measurements are prevalent in various machine learning tasks. Recent advances have extended Deep Neural Networks (DNNs) to operate on manifolds,..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 1
+date: 2026-07-13
+featured: false
+gradient: grad-4
+---
+
+arXiv:2607.08783v1 Announce Type: new Abstract: Manifold-valued measurements are prevalent in various machine learning tasks. Recent advances have extended Deep Neural Networks (DNNs) to operate on manifolds, accompanied by normalization techniques tailored to different geometries, collectively referred to as Riemannian normalization. However, most existing Riemannian normalization methods are either designed for specific manifolds or fail to effectively normalize manifold-valued sample distributions. To address these limitations, we propose LieBN, a framework for Riemannian Batch Normalization (RBN) over Lie groups. Our approach leverages the theoretically convenient left- and right-invariant metrics, which naturally exist in every Lie group, and provides theoretical guarantees for controlling the Riemannian mean and variance. We instantiate LieBN across nine distinct geometries: four on the Symmetric Positive Definite (SPD) manifold, one on the group of rotation matrices, and four on the manifold of full-rank correlation matrices. Notably, among the SPD metrics, we introduce a novel right-invariant metric and extend three existing Lie group structures via matrix power deformation. Extensive experiments on different manifolds validate the effectiveness of our framework. The code is available at https://github.com/GitZH-Chen/LieBN.git.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2607.08783)*
