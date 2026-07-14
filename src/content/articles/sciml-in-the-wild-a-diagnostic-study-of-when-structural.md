@@ -1,0 +1,17 @@
+---
+title: "SciML in the Wild: A Diagnostic Study of When Structural Priors Help and When They Hurt"
+dek: "arXiv:2607.09684v1 Announce Type: new Abstract: Scientific Machine Learning (SciML) methods such as Neural Ordinary Differential Equations (NODEs), Physics-Informed Neural Networks (PINNs), and Universal Differential..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 1
+date: 2026-07-14
+featured: false
+gradient: grad-4
+---
+
+arXiv:2607.09684v1 Announce Type: new Abstract: Scientific Machine Learning (SciML) methods such as Neural Ordinary Differential Equations (NODEs), Physics-Informed Neural Networks (PINNs), and Universal Differential Equations (UDEs) are most effective when structural priors reflect reliable governing dynamics. We ask what happens when this assumption is violated. Using macroeconomic forecasting as a stress-test domain, we evaluate five model families, ARIMA, LSTM, NODE, PINN, and UDE, across 23 countries using sparse annual data, multiple temporal splits, and five random seeds. Our results show that none of the evaluated models achieve consistently strong forecasting performance, highlighting the difficulty of low-frequency macroeconomic prediction. However, a clear relative hierarchy emerges: less-constrained models, particularly ARIMA and NODE, consistently outperform more-constrained heuristic-prior models such as PINN and UDE. Rather than treating this as a rejection of SciML, we interpret it as a diagnostic result: structural priors can act as misregularizers when they do not match the data-generating process. We identify failure modes including prior misalignment, regime shifts, structural breaks, and optimization instability, and argue that SciML practitioners should test whether structure helps before assuming that more structure is beneficial.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2607.09684)*
