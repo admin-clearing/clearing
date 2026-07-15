@@ -1,0 +1,17 @@
+---
+title: "Repairing Shape-Prior Shortcuts in Long-Range Single-Shot Fringe Projection Profilometry"
+dek: "arXiv:2607.11928v1 Announce Type: new Abstract: Single-shot fringe projection profilometry (FPP) networks that regress depth directly can exploit a shape-prior shortcut, recovering depth from object boundaries rather..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 2
+date: 2026-07-15
+featured: false
+gradient: grad-4
+---
+
+arXiv:2607.11928v1 Announce Type: new Abstract: Single-shot fringe projection profilometry (FPP) networks that regress depth directly can exploit a shape-prior shortcut, recovering depth from object boundaries rather than from fringe phase. On a photorealistic synthetic benchmark (15,600 fringe images, 50 objects at 1.5-2.1 m standoff), the best such UNet baseline plateaus at 14.54 mm object mean absolute error (MAE), and neither more data nor more capacity removes the shortcut, because neither changes the hypothesis space the optimizer searches. We introduce PhiCalNet, which outputs a wrapped-phase representation $(\sin\phi, \cos\phi)$ and maps it to depth through a fixed differentiable calibration layer, removing the shape-prior solution architecturally rather than by a loss penalty. Because the single-shot mapping is non-injective without fringe order, PhiCalNet takes the fringe order as auxiliary input, an assumption a sensitivity analysis shows tolerates realistic decoding error; a physics-informed (PINN) baseline with the same physics as a soft penalty yields no gain, isolating the architectural choice as the operative factor. PhiCalNet reduces object MAE 3.3x to 4.46 mm, its residual confined to 0.103% of pixels at the $\pm\pi$ wrap discontinuity, and a three-frame extension reaches 1.16 mm. Two checks agree: interpretability makes phase the most decodable internal feature, and pixel-wise conformal uncertainty quantification, to our knowledge the first for FPP, localizes error at the same discontinuity, where rejecting the top 5% of pixels by snapshot disagreement cuts root-mean-square error by 64% versus 3.5% for the baseline.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2607.11928)*
