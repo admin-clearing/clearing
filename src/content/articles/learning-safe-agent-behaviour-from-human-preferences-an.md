@@ -1,0 +1,17 @@
+---
+title: "Learning Safe Agent Behaviour from Human Preferences and Justifications via World Models"
+dek: "arXiv:2607.13172v1 Announce Type: new Abstract: We address the problem of safely training an agent policy and deploying a good and safe policy, in settings where the environment dynamics are unknown and no suitable..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 2
+date: 2026-07-16
+featured: false
+gradient: grad-4
+---
+
+arXiv:2607.13172v1 Announce Type: new Abstract: We address the problem of safely training an agent policy and deploying a good and safe policy, in settings where the environment dynamics are unknown and no suitable reward function is available. In the context of safety-critical environments, we consider traditional reinforcement learning impractical and resort to the resource of human input. We introduce DROPJ, a human-centred method for both safe training and deployment. We first learn a world model (a learned simulator) from a dataset of prior real-world trajectories. A human then plays the game in this learned simulator to extract several informative simulated trajectories. From these, we sample pairs of simulated trajectory segments and elicit from a human their preference over these segments, as well as a reason (justification) for their choice. We then train a reward model from these justified preferences and use it, together with the world model, to directly deploy the agent using model predictive control. Running real-user experiments, we find that generating informative simulated trajectories from a user significantly reduces the computational cost during training compared to other strategies, and can also improve the performance during deployment. In the context of training within a learned simulator, we show that the use of preferences rather than other types of feedback substantially improves the performance during deployment. We further demonstrate that safety justifications accompanying preferences can significantly enhance safety or prioritise user-prescribed aspects of safety associated with them during deployment.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2607.13172)*
