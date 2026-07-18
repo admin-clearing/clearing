@@ -1,0 +1,17 @@
+---
+title: "Automatic Hard Example Synthesis with Multi-Level Agentic Data Curation"
+dek: "arXiv:2607.14256v1 Announce Type: new Abstract: Multimodal Large Language Models (MLLMs) are increasingly deployed for nuanced content safety and moderation tasks, yet they remain vulnerable to adversarial attacks and..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 1
+date: 2026-07-18
+featured: false
+gradient: grad-4
+---
+
+arXiv:2607.14256v1 Announce Type: new Abstract: Multimodal Large Language Models (MLLMs) are increasingly deployed for nuanced content safety and moderation tasks, yet they remain vulnerable to adversarial attacks and out-of-distribution edge cases. Traditional active learning and manual annotation fail to scale against the complexity and volume of novel multimodal threats. In this paper, we propose an automated, agentic red-teaming framework that systematically synthesizes difficult examples using an iterative strategy that proposes novel hypotheses as well as mutating on past attempts. Leveraging a multi-agent architecture that consists of a high-reasoning Architect agent, an advanced image generator, and a multi-level verification committee of LLM raters, our system autonomously uncovers boundary-pushing violations and ambiguous policy edge cases without any human intervention. By employing these carefully synthesized adversarial examples as in-context demonstrations via test-time Retrieval, we substantially improve the target model's robustness, reducing the False Negative Rate (FNR) from 41.2% to 24.5% in a public image safety benchmark without relying on any human labeling.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2607.14256)*
