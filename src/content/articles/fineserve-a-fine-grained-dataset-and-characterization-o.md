@@ -1,0 +1,17 @@
+---
+title: "FineServe: A Fine-Grained Dataset and Characterization of Global LLM Serving Workloads"
+dek: "arXiv:2607.19349v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed as always-on online services, making efficient LLM serving a critical systems challenge. Achieving low latency and..."
+domain: research
+relevance: 5
+author: "arXiv"
+readTime: 1
+date: 2026-07-23
+featured: false
+gradient: grad-4
+---
+
+arXiv:2607.19349v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed as always-on online services, making efficient LLM serving a critical systems challenge. Achieving low latency and high throughput under volatile demand requires deep understanding of real-world serving workloads, yet existing studies often rely on proxy traces or coarse-grained characterizations that fail to capture the heterogeneity of modern multi-model LLM platforms. We present FineServe, an in-the-wild, multi-model LLM serving workload dataset collected from a global commercial marketplace, enabling fine-grained characterization of real-world serving dynamics across heterogeneous models and tasks. Leveraging FineServe, we conduct a comprehensive analysis of arrival dynamics and token behavior, revealing fundamentally different fluctuation regimes across model architectures, scales and task intents. Building on these insights, we develop the FineServe workload generator, which composes fine-grained model-aware workloads into configurable mixtures tailored for benchmarking multi-model serving platforms. By exposing these fine-grained workload dynamics, FineServe provides a realistic foundation for evaluating routing, scheduling, and capacity-planning strategies in LLM serving systems. FineServe is available at https://github.com/hihiztc1/FineServe.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2607.19349)*

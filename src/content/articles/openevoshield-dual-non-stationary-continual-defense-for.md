@@ -1,0 +1,17 @@
+---
+title: "OpenEvoShield: Dual Non-Stationary Continual Defense for Open-World Multi-Agent System Attacks"
+dek: "arXiv:2607.19351v1 Announce Type: new Abstract: LLM-based multi-agent systems (LLM-MAS) are increasingly deployed in safety-critical applications, where adversaries inject malicious instructions through inter-agent..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 1
+date: 2026-07-23
+featured: false
+gradient: grad-4
+---
+
+arXiv:2607.19351v1 Announce Type: new Abstract: LLM-based multi-agent systems (LLM-MAS) are increasingly deployed in safety-critical applications, where adversaries inject malicious instructions through inter-agent communication to propagate harmful behaviors. Unlike static threats, these attacks are doubly dynamic: adversaries refine injection strategies against deployed defenses while normal-agent behavior drifts with system expansion. Existing defenses treat deployment as a closed-world problem and degrade rapidly once either distribution shifts beyond training coverage. We propose OpenEvoShield, a co-evolutionary continual defense framework for LLM-MAS. An asymmetric rate controller (M1) decouples fast attack-side and slow normal-side learning rates from dual drift signals. A normal-boundary updater (M2) maintains a dynamic behavioral boundary at the slow rate, while an EWC-regularized policy ensemble (M3) fast-adapts without catastrophic forgetting. An energy-based multi-granularity detector (M4) fuses node-, subgraph-, and graph-level evidence to classify novel attacks as out-of-distribution. Experiments over 100 deployment rounds across five benchmarks and four MAS topologies show that OpenEvoShield outperforms static and continual baselines, detecting most previously unseen attacks while keeping false positive rates low.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2607.19351)*
