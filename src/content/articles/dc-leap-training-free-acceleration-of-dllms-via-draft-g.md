@@ -1,0 +1,17 @@
+---
+title: "DC-Leap: Training-Free Acceleration of dLLMs via Draft-Guided Contiguous Leaping Decoding"
+dek: "arXiv:2607.20467v1 Announce Type: new Abstract: While parallel decoding is central to the efficiency of Diffusion Large Language Models (dLLMs), current strategies are often hindered by overly conservative confidence..."
+domain: research
+relevance: 5
+author: "arXiv"
+readTime: 1
+date: 2026-07-24
+featured: false
+gradient: grad-4
+---
+
+arXiv:2607.20467v1 Announce Type: new Abstract: While parallel decoding is central to the efficiency of Diffusion Large Language Models (dLLMs), current strategies are often hindered by overly conservative confidence thresholds. These thresholds, necessitated by the Joint Probability Dependence Error (JPDE), result in redundant denoising iterations and suboptimal inference speeds. To overcome this, we propose DC-Leap, a training-free framework that enables reliable acceleration of dLLMs in the moderate-confidence regime. DC-Leap introduces a Dynamic Contiguous Verification strategy that integrates strictly-ordered causal constraints into the parallel decoding process. By progressively validating token dependencies, this mechanism effectively neutralizes the JPDE, enabling reliable acceleration with comparable performance. Furthermore, DC-Leap incorporates the draft-guided decoding mechanism, where the draft helps extend the context by leaping forward across multiple tokens, providing look-ahead context and retaining the structural benefits of bidirectional attention during inference. Extensive experiments on standard benchmarks demonstrate that DC-Leap achieves substantial speedups, up to 53.19x on MBPP for long-sequence generation, and up to 105.02x when combined with KV-Cache with comparable generation quality. Code is available at https://github.com/ffh-wyls/DC-Leap .
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2607.20467)*
