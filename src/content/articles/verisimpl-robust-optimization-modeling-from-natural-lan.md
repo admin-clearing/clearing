@@ -1,0 +1,17 @@
+---
+title: "VeriSimpl: Robust Optimization Modeling from Natural Language using Simplification-based Verification"
+dek: "arXiv:2607.20474v1 Announce Type: new Abstract: Natural language interfaces can greatly benefit the accessibility and usability of optimization modeling, and recent advances in large language models (LLMs) show promise..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 1
+date: 2026-07-24
+featured: false
+gradient: grad-4
+---
+
+arXiv:2607.20474v1 Announce Type: new Abstract: Natural language interfaces can greatly benefit the accessibility and usability of optimization modeling, and recent advances in large language models (LLMs) show promise in automatically translating textual problem descriptions into executable solver formulations. However, a key challenge for existing approaches is to ensure that the inferred formulation correctly implements the intended task, even if it may execute without errors. We introduce VeriSimpl, a solver LLM framework for robust natural-language-to-optimization formalization. Our approach is based on the idea of simplification-based verification, where the optimization solver is leveraged to generate simplified diagnostic queries about a candidate formulation to allow the LLM to tractably reason about the correctness of the formulation with respect to the task description. We present such simplification strategies along different dimensions with respect to problem constraints and decision variables, which allow the LLM to reason locally under fixed global contexts. Evaluations on a range of optimization benchmarks show how our approach provides consistent improvements in accuracy over existing methods, while also providing a novel high-precision self-verification signal.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2607.20474)*
