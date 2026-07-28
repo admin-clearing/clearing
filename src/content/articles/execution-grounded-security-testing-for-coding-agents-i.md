@@ -1,0 +1,17 @@
+---
+title: "Execution-Grounded Security Testing for Coding Agents in Software Engineering Pipelines"
+dek: "arXiv:2607.22569v1 Announce Type: new Abstract: Coding agents are increasingly integrated into system operations, where their tool use can directly modify project artifacts, execution environments, and the underlying..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 2
+date: 2026-07-28
+featured: false
+gradient: grad-4
+---
+
+arXiv:2607.22569v1 Announce Type: new Abstract: Coding agents are increasingly integrated into system operations, where their tool use can directly modify project artifacts, execution environments, and the underlying system. For example, if a coding agent inserts a hook into a system startup or configuration script, that change can persist after the interaction, be triggered later, and abuse delegated user or system privileges to modify the system. This makes security testing a system problem: the key question is not only what the agent says, but what it actually does to the surrounding environment. We present an execution-grounded red-team testing framework for probing this execution-layer security boundary using observable sandbox evidence, including tool invocations, runtime traces, and file-system diffs. Our framework embeds target unsafe operations into routine software engineering workloads, including unit testing, regression testing, crash reproduction, and validation, and uses an execution oracle to guide refinement when an initial probe is rejected or fails. Across multiple agent frameworks and model backbones, our red-team workload reformulation substantially increases verified unsafe execution, reaching 73.61% on code carriers and 53.93% on text carriers. These results show that coding agents in system operations remain insecure under task disguise: once risky intent is hidden inside plausible engineering tasks, the agent can be induced to carry out unsafe actions on the surrounding system. More broadly, coding agents in system operations still demand stronger security testing and safeguards.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2607.22569)*

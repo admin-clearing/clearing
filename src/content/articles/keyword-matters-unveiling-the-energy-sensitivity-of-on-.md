@@ -1,0 +1,17 @@
+---
+title: "Keyword Matters: Unveiling the Energy Sensitivity of On-Device LLM Prompting"
+dek: "arXiv:2607.22568v1 Announce Type: new Abstract: Large Language Models (LLMs) are increasingly deployed on mobile and embedded devices to improve privacy and reduce network latency. Yet on-device inference faces a..."
+domain: research
+relevance: 5
+author: "arXiv"
+readTime: 1
+date: 2026-07-28
+featured: false
+gradient: grad-4
+---
+
+arXiv:2607.22568v1 Announce Type: new Abstract: Large Language Models (LLMs) are increasingly deployed on mobile and embedded devices to improve privacy and reduce network latency. Yet on-device inference faces a fundamental constraint: high energy consumption on battery-powered, resource-limited hardware. While model compression and runtime acceleration have been widely studied, the effect of \emph{prompt design} on energy efficiency remains underexplored. This paper presents an empirical study of the relationship between prompt wording and energy consumption for on-device LLMs. Using real power measurements collected on a smartphone, we quantify how linguistic features, particularly imperative keywords and instruction structure, affect decoding length and total energy. Our results show consistent energy differences across verbs and tasks, indicating that prompt engineering is a lightweight lever for improving energy efficiency.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2607.22568)*
