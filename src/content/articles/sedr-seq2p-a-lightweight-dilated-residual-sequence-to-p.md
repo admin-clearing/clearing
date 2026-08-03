@@ -1,0 +1,17 @@
+---
+title: "SEDR-Seq2P: A Lightweight Dilated Residual Sequence-to-Point Network for Multi-Task Industrial NILM"
+dek: "arXiv:2607.28693v1 Announce Type: new Abstract: Industrial NILM remains challenging because measurement noise and widespread concurrent machine operation reduce the generalization of models tuned on residential data...."
+domain: research
+relevance: 5
+author: "arXiv"
+readTime: 1
+date: 2026-08-03
+featured: false
+gradient: grad-4
+---
+
+arXiv:2607.28693v1 Announce Type: new Abstract: Industrial NILM remains challenging because measurement noise and widespread concurrent machine operation reduce the generalization of models tuned on residential data. This work adopts a one-to-many, multi-task disaggregation setting, in which a single network estimates multiple industrial machine loads from aggregate power. Under a unified evaluation protocol on IMDELD, we benchmark Seq2Seq, Seq2SubSeq, Seq2Point, GRU, and WaveNet using energy-estimation metrics and the accuracy-delay criterion. While Seq2Point offers a stronger accuracy-delay balance than Seq2Seq/Seq2SubSeq, GRU and WaveNet achieve higher accuracy at markedly higher computational cost. To close this gap, we propose SEDR-Seq2P, a lightweight Seq2Point extension with dilated residual blocks and squeeze-and-excitation attention. Relative to the Seq2Point baseline, SEDR-Seq2P reduces MAE by approximately 7%, improves the coefficient of determination by approximately 1%, and increases the match rate by approximately 0.8%. In addition, compared to WaveNet, SEDR-Seq2P reduces inference latency by approximately 58%, yielding a favorable accuracy-delay trade-off for scalable industrial deployment.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2607.28693)*
