@@ -1,0 +1,17 @@
+---
+title: "Beyond Decision Boundaries: Relational Geometry Attacks on Contrastive Embedding Manifolds"
+dek: "arXiv:2608.10237v1 Announce Type: new Abstract: Contrastive learning and Siamese embedding models have become the foundation of modern verification systems, where decisions are governed not by discrete classification..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 1
+date: 2026-08-12
+featured: false
+gradient: grad-4
+---
+
+arXiv:2608.10237v1 Announce Type: new Abstract: Contrastive learning and Siamese embedding models have become the foundation of modern verification systems, where decisions are governed not by discrete classification boundaries, but by relational geometry in embedding space. However, existing adversarial attacks remain fundamentally classification-centric, overlooking the vulnerability of relational geometry. In this paper, we introduce a geometry-aware adversarial attack framework that reformulates attacks on contrastive systems as manifold-level relational corruption. Instead of targeting individual predictions, the proposed framework systematically distorts similarity organization within the embedding manifold by pushing positive pairs apart while simultaneously pulling negative pairs closer, ultimately collapsing and inverting pairwise similarity structure. To enable scalable deployment, we shift iterative online optimization into an offline adversarial geometry deformation prior learning stage and train a lightweight feed-forward generator that learns generalized geometry deformation patterns from the victim model. Once trained, the generator produces adversarial perturbations through a single forward pass without requiring online gradient computation, enabling real-time online attacks against similarity-based verification systems. Experimental results across multiple verification architectures demonstrate substantial degradation of verification performance together with severe manifold-level relational corruption. On the Markmatch verification system, the proposed attack reduces accuracy from 95.4% to 38.6% while completely reversing the positive-negative similarity structure.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2608.10237)*
