@@ -1,0 +1,17 @@
+---
+title: "Predictive Memory Localization: Forecasting Selective Intervention Paths from Internal Signals"
+dek: "arXiv:2608.12892v1 Announce Type: new Abstract: Activation steering turns localized representations into control directions, but localization alone does not reveal whether a direction has a selective operating regime...."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 2
+date: 2026-08-15
+featured: false
+gradient: grad-4
+---
+
+arXiv:2608.12892v1 Announce Type: new Abstract: Activation steering turns localized representations into control directions, but localization alone does not reveal whether a direction has a selective operating regime. We introduce Predictive Memory Localization (PML), which treats the measured-grid intervention path as the predictive object of memory localization. PML separates random-calibrated target movement from semantic-neighbor and capability damage, and compares static localization and supervised geometry with a strength-disjoint low-dose causal response. Our frozen study covers 3,000 records from nine datasets and fourteen domains, yielding 30,000 distinct record-direction-layer paths and 210,000 distinct path-strength evaluations. At layer 7, the geometry-derived RFM/AGOP direction reaches 13.1% target-any and 12.3% clean-any, exceeding random by 3.6 and 3.4 percentage points under a record-paired bootstrap. Across record-, dataset-, and domain-grouped splits, responses at $|\alpha|=0.1$ are the strongest signal for outcomes at disjoint strengths $|\alpha|\in\{0.25,0.5\}$. On held-out records, a predictor-driven selector chooses a coefficient or abstains, improves utility and reduces semantic-neighbor damage relative to a train-tuned fixed-strength policy, and avoids most evaluations in a dense scan. Across three residual-norm-matched base models, learned directions retain selective-path gains and low-dose responses yield 0.801-0.828 record-held-out macro AUROC. PML therefore turns memory localization into a falsifiable forecast of margin-level selective outcomes and a risk-aware intervention decision.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2608.12892)*
