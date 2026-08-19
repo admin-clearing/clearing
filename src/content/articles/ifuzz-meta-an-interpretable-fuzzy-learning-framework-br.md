@@ -1,0 +1,17 @@
+---
+title: "iFuzz-Meta: An Interpretable Fuzzy Learning Framework Bridging Top-Down and Bottom-Up Knowledge Integration"
+dek: "arXiv:2608.14646v1 Announce Type: new Abstract: Interpretable representation learning remains a key challenge in modern neural computation, particularly when models are expected not only to perform but also to explain..."
+domain: research
+relevance: 5
+author: "arXiv"
+readTime: 1
+date: 2026-08-18
+featured: false
+gradient: grad-4
+---
+
+arXiv:2608.14646v1 Announce Type: new Abstract: Interpretable representation learning remains a key challenge in modern neural computation, particularly when models are expected not only to perform but also to explain their reasoning. This paper introduces iFuzz-Meta, an interpretable fuzzy rule-based learning framework that preserves human-understandable reasoning structures within modern neural architectures. Each fuzzy rule corresponds to a semantic and spatial prototype defined in the original feature space, enabling transparent inference and direct interpretability. Meta-learning is employed as an analytical paradigm to examine how these interpretable rules reorganize across tasks and domains, providing a principled means to link algorithmic adaptation with cognitive representation. A knowledge-guided regularization mechanism further enables a top-down-bottom-up integration, in which theoretical priors act as soft inductive biases while data-driven learning refines and extends them. This dual process ensures that adaptation proceeds along semantically and physiologically meaningful trajectories, rather than arbitrary parameter shifts. Evaluations demonstrate that iFuzz-Meta achieves interpretable reasoning and stable cross-domain generalization, establishing a potential general pathway toward explainable and knowledge-aware fuzzy systems.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2608.14646)*
