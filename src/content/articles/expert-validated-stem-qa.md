@@ -1,0 +1,17 @@
+---
+title: "Expert-validated STEM QA"
+dek: "arXiv:2608.28591v1 Announce Type: new Abstract: Recent advancements in AI are helping scientists achieve breakthroughs in fields such as mathematics, medicine, and materials sciences. New evaluation datasets for AI..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 2
+date: 2026-09-01
+featured: false
+gradient: grad-4
+---
+
+arXiv:2608.28591v1 Announce Type: new Abstract: Recent advancements in AI are helping scientists achieve breakthroughs in fields such as mathematics, medicine, and materials sciences. New evaluation datasets for AI models contribute to such advancement in AI. In the STEM domain, frontier models have consumed most of the available online data, creating the need for human-created datasets that codify the knowledge of leading experts in the domain. There are several STEM datasets available for the research community in this field. However, there are some gaps in these datasets, leaving room for improvement. Examples of gaps include (1) saturation in model performance on these datasets, leaving no head-room for meaningful evaluations, (2) skewed taxonomy distributions, (3) multiple choice question format that is misaligned with how scientists use AI in the real world, and (4) inaccurate answers and rationales partially led by a contest-based data collection and a time-bound review process. In this study, we present 'Expert-validated STEM QA', a high-quality, expert-validated STEM dataset (N=398) in Physics, Chemistry, Biology, and Mathematics, created by 241 domain experts. We (1) carefully designed a taxonomy with balanced distribution, (2) vetted question contributors with quality-driven incentive, (3) conducted multiple rounds of reviews with revisions validated by domain experts based on consensus, and (4) created the dataset in verifiable question and answer format. Our study demonstrated low performance ($<25\%$) of frontier AI models on the dataset as a benchmark. Post-training on a separate, private version of the dataset (N=2,000) increased performance of the open source model by $15\%$ relative to the baseline model (p=0.045) on the STEM subset of HLE-verified dat
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2608.28591)*
