@@ -1,0 +1,17 @@
+---
+title: "When Prediction Error Is Not Enough: Evaluating Nuisance-Function Prediction for Causal Estimation"
+dek: "arXiv:2609.00071v1 Announce Type: new Abstract: Prediction error is widely used to evaluate nuisance-function estimators in causal inference, but its relationship with causal estimator performance may differ across..."
+domain: research
+relevance: 5
+author: "arXiv"
+readTime: 1
+date: 2026-09-02
+featured: false
+gradient: grad-4
+---
+
+arXiv:2609.00071v1 Announce Type: new Abstract: Prediction error is widely used to evaluate nuisance-function estimators in causal inference, but its relationship with causal estimator performance may differ across performance measures. We studied this question in a partially linear model using Monte Carlo simulations. We compared ordinary least squares (OLS), generalized additive models (GAMs), XGBoost, and Double Machine Learning with XGBoost (DML-XGBoost), evaluating nuisance-function prediction error, bias, RMSE, and 95\% confidence interval coverage. We also examined a simple joint-error measure based on the absolute cross-product of estimation errors from the exposure and outcome nuisance functions. Across the simulated settings, XGBoost had the lowest RMSE among the non-oracle methods, while DML-XGBoost generally provided better confidence interval coverage. Prediction error did not consistently track causal bias across methods and settings, and the method with the best point-estimation performance did not necessarily have the best confidence interval coverage. The joint-error measure was only weakly associated with causal bias and did not provide a useful standalone measure of causal performance. These results suggest that prediction error is useful for assessing nuisance-function estimation, but it should not be treated as a direct measure of the quality of the resulting causal estimator.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2609.00071)*
