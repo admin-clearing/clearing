@@ -1,0 +1,17 @@
+---
+title: "Learnable composition for neural operators"
+dek: "arXiv:2609.03069v1 Announce Type: new Abstract: Neural operators are fast, differentiable surrogates for physical simulation, but their accuracy often degrades when domain geometry, size, or operating conditions differ..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 1
+date: 2026-09-04
+featured: false
+gradient: grad-4
+---
+
+arXiv:2609.03069v1 Announce Type: new Abstract: Neural operators are fast, differentiable surrogates for physical simulation, but their accuracy often degrades when domain geometry, size, or operating conditions differ from training. Supervised adaptation can recover accuracy, but even a small target set requires costly high-fidelity simulations. We therefore ask how pretraining and transfer can be designed together to reduce this deployment cost. LatentDDM first pretrains a neural operator to predict fields on small subdomains. For a new setting, it freezes this operator and trains only a lightweight module that composes the local predictions. We evaluate our method on two complementary problems: steady Darcy flow, where long-range pressure coupling must extend across increasingly large porous domains, and unsteady incompressible flow around a pitching airfoil, where rollout errors compound as target pitching frequencies exceed the training range. Compared with the capacity-matched models that process the full domain at once, LatentDDM's error is 36-56% lower on larger Darcy domains after adaptation with 16 target simulations. It also improves 20-step field rollouts in fast-pitching airfoil flow, both zero-shot and after few-shot calibration. These results identify the co-designed local pretraining and composition-level transfer as a promising design principle for physical foundation models.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2609.03069)*
