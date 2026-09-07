@@ -1,0 +1,17 @@
+---
+title: "ResLearn-XR: Residual Learning for Network Traffic and Quality-of-Experience-Aware Modeling in Extended Reality"
+dek: "arXiv:2609.04493v1 Announce Type: new Abstract: We present ResLearn-XR, a residual learning framework for predicting eXtended Reality (XR) network traffic and estimating Quality-of-Experience (QoE) risk. ResLearn-XR..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 1
+date: 2026-09-07
+featured: false
+gradient: grad-4
+---
+
+arXiv:2609.04493v1 Announce Type: new Abstract: We present ResLearn-XR, a residual learning framework for predicting eXtended Reality (XR) network traffic and estimating Quality-of-Experience (QoE) risk. ResLearn-XR adopts a two-stage temporal learning structure comprising a base sequence prediction model augmented with task-specific residual learning components to improve adaptability to bursty, non-stationary XR traffic dynamics. The residual learning stages operate in the value space for continuous XR traffic forecasting and in the logit space for probabilistic QoE risk estimation. \rev{For the QoE-risk branch, we introduce a Data Descriptor Algorithm (DDA), a causal feature-construction module that converts packet-level application-layer observables into frame-timing-aware descriptors suitable for encrypted traffic analysis. We also construct an XR Traffic-QoE dataset that pairs continuous XR traffic traces with session-level user-reported QoE labels. ResLearn-XR reduces SMAPE by up to 17.84% across frame-count, frame-size, and inter-arrival-time prediction, while reducing QoE-risk estimation SMAPE by up to 87.8% over single-stage baselines.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2609.04493)*
