@@ -1,0 +1,17 @@
+---
+title: "Reasoning-Aware Compression: Identifying and Protecting Vulnerable Reasoning Circuits for Energy-Efficient LLM Deploymen"
+dek: "arXiv:2609.05512v1 Announce Type: new Abstract: Large Reasoning Models (LRMs) impose substantial energy costs during deployment, yet current compression methods apply uniform quantization across all components, risking..."
+domain: research
+relevance: 5
+author: "arXiv"
+readTime: 1
+date: 2026-09-10
+featured: false
+gradient: grad-4
+---
+
+arXiv:2609.05512v1 Announce Type: new Abstract: Large Reasoning Models (LRMs) impose substantial energy costs during deployment, yet current compression methods apply uniform quantization across all components, risking damage to critical reasoning circuits. We present a reasoning-aware compression framework that benchmarks quantization conditions across five reasoning benchmarks, GSM8K, FOLIO, MATH-500, ProofWriter, and MuSiQue, with hardware-level GPU energy measurement; profiles per-module INT4 vulnerability across all 196-224 (layer, projection) pairs via a perturbation sweep on a held-out calibration split, then selectively restores the most sensitive circuits to FP16. Three findings emerge. First, INT4 quantization can increase energy by extending reasoning chains; a 25% power reduction becomes a net energy increase on GSM8K. Second, vulnerability is task-dependent: attention projections are more critical for mathematical reasoning, and sensitivity patterns differ by architecture in logical inference. Third, selective compression achieves Pareto-optimal points inaccessible to uniform methods: R1-Qwen-7B Top-10% on ProofWriter gains +12 pp over FP16 at -9.7% energy, validated on held-out data across five reasoning benchmarks.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2609.05512)*
