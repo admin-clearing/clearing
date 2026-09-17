@@ -1,0 +1,17 @@
+---
+title: "DSD: Learning Diverse and Reusable Motor Skills via Diffusion Skill Discovery"
+dek: "arXiv:2609.17682v1 Announce Type: new Abstract: Humans efficiently learn new tasks by reusing a rich repertoire of motor skills across different goals and contexts. A similar strategy can also be used to enable..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 2
+date: 2026-09-17
+featured: false
+gradient: grad-4
+---
+
+arXiv:2609.17682v1 Announce Type: new Abstract: Humans efficiently learn new tasks by reusing a rich repertoire of motor skills across different goals and contexts. A similar strategy can also be used to enable simulated characters to efficiently perform new tasks by leveraging reusable motor skills. To support a wide range of downstream tasks, the learned repertoire should be diverse, consisting of distinct behaviors as well as spatial and temporal variation within each behavior. A commonly used method for learning diverse skills is by maximizing the mutual information between skill latents and the states produced by a policy. The marginal state entropy promotes broad behavioral coverage, while the conditional entropy encourages consistent behaviors from each latent. However, directly estimating the marginal state entropy is intractable in high-dimensional control problems. Prior methods therefore rely on indirect latent-space approximations or coarse estimators of the state distribution. These approximations may not effectively promote broad coverage of the state space, resulting in skills with limited behavioral diversity and reduced utility for downstream tasks. In this work, we propose Diffusion Skill Discovery (DSD), a skill discovery method that uses a diffusion model to approximate the entropy gradient of the policy-induced state distribution through score matching. The resulting objective encourages the discovery of skills that produce a broader range of behaviors for high-dimensional humanoid control. The learned skills are reused in two downstream control settings: hierarchical control with a task-specific high-level policy and zero-shot control through latent selection from offline trajectories. Our experiments show that DSD discovers a broader repertoire of
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2609.17682)*
