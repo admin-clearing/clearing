@@ -1,0 +1,17 @@
+---
+title: "Forecast-Dojo: Replayable Environments for Benchmarking and Training LLM Forecasting Agents"
+dek: "arXiv:2609.28876v1 Announce Type: new Abstract: We introduce Forecast-Dojo, a replayable environment for benchmarking and training LLM forecasting agents. It combines resolved prediction-market questions with dated..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 1
+date: 2026-09-25
+featured: false
+gradient: grad-4
+---
+
+arXiv:2609.28876v1 Announce Type: new Abstract: We introduce Forecast-Dojo, a replayable environment for benchmarking and training LLM forecasting agents. It combines resolved prediction-market questions with dated news, allowing agents to research an event and revisit their predictions at successive historical dates. The same tasks and tools support repeated evaluation, collection of training interactions, and feedback from recorded outcomes without waiting for new events to resolve. Forecast-Dojo contains 1,568 Polymarket events, split by time into training and evaluation periods, and 18.8M dated news articles. In an evaluation of 12 models, research tools lower Brier score for all 12. Forecasts also improve as events unfold, with the largest gains at steps where more newly dated evidence is recorded. Every model still trails historical market forecasts in both Brier score and accuracy. A belief notebook carried between dates lowers research cost but does not consistently improve forecast quality. Beyond evaluation, Forecast-Dojo provides interaction trajectories and outcome feedback for agent learning, with supervised fine-tuning as a proof of concept.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2609.28876)*
