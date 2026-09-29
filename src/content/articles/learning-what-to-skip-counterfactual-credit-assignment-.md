@@ -1,0 +1,17 @@
+---
+title: "Learning What to Skip: Counterfactual Credit Assignment for Efficient Multi-Agent LLM Workflows"
+dek: "arXiv:2609.30734v1 Announce Type: new Abstract: Multi-agent LLM workflows use planning, execution, verification, and summarization to improve task performance, yet the value of each component depends on the state..."
+domain: research
+relevance: 5
+author: "arXiv"
+readTime: 1
+date: 2026-09-29
+featured: false
+gradient: grad-4
+---
+
+arXiv:2609.30734v1 Announce Type: new Abstract: Multi-agent LLM workflows use planning, execution, verification, and summarization to improve task performance, yet the value of each component depends on the state already produced. Executing every component can waste computation or overwrite a correct intermediate answer. We formulate component omission as counterfactual credit assignment: full-workflow logs reveal the executed trajectory's reward, while controlled skip interventions reveal the consequences of omitting a future step. We introduce Learning What to Skip (LW2S), which learns action-specific safety models from these interventions and combines held-out calibration with domain-native guards to select skips. When an early skip is rejected, the controller can continue execution and reconsider a later component. Across mathematical reasoning, multiple-choice QA, and code generation with two instruction-model families, LW2S reduces recorded token cost while matching or improving aggregate full-workflow accuracy in the evaluated settings. Scale-up and second-topology experiments further examine component redundancy, while shared-error cases reveal why agreement alone is insufficient for skip selection. These findings connect efficient workflow execution to learning the conditional utility of individual components.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2609.30734)*

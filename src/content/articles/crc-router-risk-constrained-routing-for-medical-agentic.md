@@ -1,0 +1,17 @@
+---
+title: "CRC-Router: Risk-Constrained Routing for Medical Agentic AI Systems"
+dek: "arXiv:2609.30714v1 Announce Type: new Abstract: Agentic AI systems are increasingly being explored in medical imaging to improve throughput and reduce clinician workload; however, safe deployment remains challenging..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 2
+date: 2026-09-29
+featured: false
+gradient: grad-4
+---
+
+arXiv:2609.30714v1 Announce Type: new Abstract: Agentic AI systems are increasingly being explored in medical imaging to improve throughput and reduce clinician workload; however, safe deployment remains challenging because autonomous errors may propagate into downstream clinical decisions. A central requirement is therefore not only strong predictive performance, but also a reliable routing mechanism that determines when the system should proceed autonomously and when a case should be escalated for further review. To address this gap, we propose CRC-Router, a risk-constrained, uncertainty-aware routing module that is applicable to both conventional medical prediction models and agentic medical AI systems. CRC-Router combines multiple complementary uncertainty signals with the predictive score to construct a per-finding routing feature vector, maps this vector to an estimated wrong-accept risk using a lightweight per-finding risk model, and then applies Conformal Risk Control (CRC) to calibrate acceptance thresholds under a user-specified risk target. Instantiated on chest X-ray multi-finding triage using the NIH ChestX-ray14 dataset, CRC-Router achieves the strongest empirical risk--coverage trade-off among the evaluated baselines, both as a standalone routing layer and as a plug-in module integrated with the state-of-the-art MedRAX agent. These results demonstrate both the effectiveness of CRC-Router in selective medical automation and its modular, model-agnostic compatibility with existing predictive and agentic medical pipelines. Code is publicly available at https://github.com/XLIAaron/CRC-Router
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2609.30714)*
