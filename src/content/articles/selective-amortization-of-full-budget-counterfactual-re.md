@@ -1,0 +1,17 @@
+---
+title: "Selective Amortization of Full-Budget Counterfactual Reasoning for Visual Token Communication"
+dek: "arXiv:2609.30756v1 Announce Type: new Abstract: Generative image communication transmits compact semantic tokens under a limited packet budget, where token selection directly affects the final reconstruction quality..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 2
+date: 2026-09-29
+featured: false
+gradient: grad-4
+---
+
+arXiv:2609.30756v1 Announce Type: new Abstract: Generative image communication transmits compact semantic tokens under a limited packet budget, where token selection directly affects the final reconstruction quality after the complete packet is decoded. However, accurately estimating the terminal value of every candidate token requires repeated receiver-side reconstruction, resulting in substantial encoder-side computation. To address this problem, we propose ACV-Gate, an adaptive candidate evaluation framework that learns to approximate full-budget counterfactual evaluation and selectively assigns exact evaluations to the most informative candidates. Specifically, a set-aware student is trained using terminal advantages and regrets to predict candidate rankings directly, while a selective refinement mechanism evaluates only a bounded candidate set containing both Local-MDL and direct actions; cost-based thresholds further enable explicit control of the average evaluation workload. Experiments on CIFAR-10 show that ACV-Gate consistently improves reconstruction quality while substantially reducing candidate evaluations; at 0.20 bpp, the primary adaptive configuration improves PSNR over LocalMDL by 0.636 dB with only 2.13 candidate evaluations per image, corresponding to 27.60% of the calls required by the Exact-Full expert. Matched-candidate comparisons, synchronized GPU measurements, and evaluations on STL-10 and 384 *384 scale transfer further demonstrate consistent quality computation trade-offs, with particularly pronounced gains at low bit rates. These results show that combining terminal-value learning with selective candidate evaluation provides an effective and controllable mechanism for allocating encoder computation in packet-constrained generative image commun
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2609.30756)*
