@@ -1,0 +1,17 @@
+---
+title: "TORQUE: Optimizing What (not) to Quantize Before and After Rotation"
+dek: "arXiv:2609.36032v1 Announce Type: new Abstract: Uniform random rotations are an effective preprocessing step for quantization: they make normalized coordinate distributions approximately Gaussian, enabling the use of..."
+domain: research
+relevance: 5
+author: "arXiv"
+readTime: 1
+date: 2026-10-01
+featured: false
+gradient: grad-4
+---
+
+arXiv:2609.36032v1 Announce Type: new Abstract: Uniform random rotations are an effective preprocessing step for quantization: they make normalized coordinate distributions approximately Gaussian, enabling the use of codebooks optimized offline. We introduce TORQUE, a framework that improves on previous quantization works that use random rotations by jointly optimizing how many and which coordinates to preserve at high precision both before and after rotation, under a fixed overall expected bit budget. Intuitively, before rotation, preserving large input coordinates at high precision can reduce overall error by preventing the rotation from spreading their values across many coordinates. Likewise, after rotation, preserving a small fraction of the largest-magnitude coordinates at high precision allows the remaining values to be quantized more accurately using codebooks optimized offline for the resulting truncated Gaussian distribution. We derive a quantization error upper bound and prove that top-$k$ pre-rotation retention minimizes it for each $k$. This reduces the search over coordinate subsets to an optimization over $k$, enabling a fast optimizer that uses offline codebooks and parallel parameter selection for practical implementation. We demonstrate an improved tradeoff between reconstruction accuracy and storage cost through numerical evaluation under the Gaussian model and experiments on nearest-neighbor retrieval, KV-cache compression, and activation compression.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2609.36032)*
