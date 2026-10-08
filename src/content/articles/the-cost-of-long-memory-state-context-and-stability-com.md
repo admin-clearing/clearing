@@ -1,0 +1,17 @@
+---
+title: "The Cost of Long Memory: State, Context, and Stability Complexity in Sequence Models"
+dek: "arXiv:2610.08816v1 Announce Type: new Abstract: Long-range temporal dependence poses a resource question for sequence models: for a specified predictive-memory law, how much state, context, or dynamical criticality is..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 2
+date: 2026-10-08
+featured: false
+gradient: grad-4
+---
+
+arXiv:2610.08816v1 Announce Type: new Abstract: Long-range temporal dependence poses a resource question for sequence models: for a specified predictive-memory law, how much state, context, or dynamical criticality is required in order to forecast accurately? We study this question directly in forecasting risk. For algebraically decaying predictive memory, we prove matching upper and lower approximation bounds for exponential and finite-state modes. The best $r$-mode forecast error decays as $e^{-\Theta(\sqrt r)}$, so reaching forecast error $\tau$ needs $r=\Theta(\log^2(1/\tau))$ states or modes. Earlier curse-of-memory results establish broad limitations of stable recurrent models under different approximation notions; here both sides match for one canonical predictive target in forecast risk, which fixes the optimal resource exponent for that target. We then show that genuine fractional long memory changes the geometry itself. In particular, forecast error is measured after fractional integration, prediction from a finite context of length $L$ has an exact $1/L$ leading order, and a fixed fractional strength $d$ keeps the square-log state-complexity law. Near the short-memory boundary, we identify the relevant $d^2$ and $d^4$ scales and give a uniform constructive law in the intermediate regime. For nonlinear contextual recurrences with uniformly contractive state dynamics, we derive an exponential first-chaos envelope and an explicit necessary condition that relates forecast accuracy to the contraction margin. Vanishing forecasting error on an algebraic target forces the recurrence quantitatively toward criticality, a condition that is necessary and not by itself sufficient. Finite-sample Kullback--Leibler calculations further connect the predictive geometry to stat
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2610.08816)*
