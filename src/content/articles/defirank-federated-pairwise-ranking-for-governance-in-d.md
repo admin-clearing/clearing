@@ -1,0 +1,17 @@
+---
+title: "DeFiRank: Federated Pairwise Ranking for Governance in Decentralized Financial Networks"
+dek: "arXiv:2610.12916v1 Announce Type: new Abstract: Existing governance approaches in decentralized financial networks rely on manual review processes conducted by human committees, which introduces subjective bias, creates..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 1
+date: 2026-10-13
+featured: false
+gradient: grad-4
+---
+
+arXiv:2610.12916v1 Announce Type: new Abstract: Existing governance approaches in decentralized financial networks rely on manual review processes conducted by human committees, which introduces subjective bias, creates a scalability bottleneck under high network volume, and fails to capture complex behavioural patterns and evolving network dynamics. To address these limitations, we propose \name, a federated learning-based pairwise ranking framework in which multiple institutions collaboratively train a ranking model without sharing their private transaction data. This collaborative learning enables the model to capture network-wide behavioural patterns that signify strong network participation and directly contribute to the network effect, including diversity of counterparties, usage of multiple applications, and frequency of transactions. The proposed system ranks providers based on the authenticity of their actions, promoting genuine contributors and demoting those exhibiting suspicious behaviour. We evaluate \name\ on a real-world blockchain transaction dataset. Results demonstrate that the federated approach achieves ranking performance modestly below the centralized baseline (NDCG@15: $\approx$0.87 vs.\ $\approx$0.92) while preserving data privacy and matching its ranking stability (Kendall $\tau$: $\approx$0.70 for both regimes), producing reliable governance decisions, including provider promotion and demotion (648 and 39 unique providers, respectively), without requiring centralized access to sensitive transaction data.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2610.12916)*
