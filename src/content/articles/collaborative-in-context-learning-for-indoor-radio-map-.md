@@ -1,0 +1,17 @@
+---
+title: "Collaborative In-Context Learning for Indoor Radio Map Estimation"
+dek: "arXiv:2610.31702v1 Announce Type: new Abstract: Indoor radio map estimation (RME) is essential for wireless applications such as coverage planning, localization, and network deployment. However, most existing methods..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 1
+date: 2026-10-27
+featured: false
+gradient: grad-4
+---
+
+arXiv:2610.31702v1 Announce Type: new Abstract: Indoor radio map estimation (RME) is essential for wireless applications such as coverage planning, localization, and network deployment. However, most existing methods follow a supervised learning paradigm that requires costly labeled data and task-specific model training. Moreover, indoor environments involve privacy-sensitive information, such as building layouts and structures, that often cannot be centralized. To address these challenges, we make the first attempt to formulate indoor RME as a collaborative in-context learning (ICL) problem. We propose Poly-Ripple, a framework in which multiple clients perform ICL using large autoregressive vision models (LAVMs) without model updates. Each client is prompted by its private demonstrations and predicts the radio map for the same scene query. To capture the causal structure of wireless propagation outward from the transmitter (Tx), we adopt ripple-ordered autoregressive modeling. We further introduce importance-aware aggregation to exploit heterogeneous contextual knowledge distributed across clients under the context length constraint. We provide theoretical analysis and conduct extensive experiments on a public indoor RME benchmark. The experimental results show that Poly-Ripple consistently outperforms representative ICL baselines, while aligning with our theoretical analysis.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2610.31702)*
