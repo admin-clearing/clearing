@@ -1,0 +1,17 @@
+---
+title: "TempShap: When and How Much a Feature Matters in Time-Series Forecasting"
+dek: "arXiv:2610.33330v1 Announce Type: new Abstract: Attribution for a time-series forecaster should answer two questions that a feature-level scalar cannot: when in the input window a feature acts, and how much its..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 1
+date: 2026-10-27
+featured: false
+gradient: grad-4
+---
+
+arXiv:2610.33330v1 Announce Type: new Abstract: Attribution for a time-series forecaster should answer two questions that a feature-level scalar cannot: when in the input window a feature acts, and how much its influence changes across the forecast horizon. Most existing Shapley explainers treat each feature as one player and therefore collapse both axes. We propose TempShap, a retrospective, loss-based Shapley framework whose players are the individual input cells $(t,i)$. Its attribution tensor yields temporal-localization and horizon-impact profiles. We validate these against planted temporal structures, a tractable exact cell game, and a closed-form attribution oracle for a real linear forecaster. Permutation sharing estimates the cell-level game at localized perturbation cost. Under redundant inputs, one-at-a-time scores under-credit substitutable information, whereas the signed Shapley decomposition preserves total value and yields more reliable held-out deletion rankings under mean masking. A planted counterexample isolates the redundancy mechanism. Experiments show a deletion-ranking advantage across Shapley estimators, forecasting benchmarks, and model families. TempShap therefore makes fine-grained Shapley attribution both practical and operationally useful.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2610.33330)*
