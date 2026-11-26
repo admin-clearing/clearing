@@ -1,0 +1,17 @@
+---
+title: "SpatialCraft: Evolving Procedural Intelligence from Experience and Skills for Spatial Reasoning Agents"
+dek: "arXiv:2611.31475v1 Announce Type: new Abstract: Spatial reasoning agents increasingly rely on external tools, such as 3D reconstruction, segmentation, and geometric computation, to answer questions that a multimodal..."
+domain: research
+relevance: 4
+author: "arXiv"
+readTime: 2
+date: 2026-11-26
+featured: false
+gradient: grad-4
+---
+
+arXiv:2611.31475v1 Announce Type: new Abstract: Spatial reasoning agents increasingly rely on external tools, such as 3D reconstruction, segmentation, and geometric computation, to answer questions that a multimodal large language model (MLLM) cannot resolve from pixels alone. Tool access, however, shifts the bottleneck to orchestration: the agent must decide which tools to call, in what order, and how to interpret their outputs, yet a stateless agent repeats the same mistakes across tasks. We ask whether a frozen tool-using agent can improve its orchestration from its own interaction history, without parameter updates. We present SpatialCraft, a self-evolving framework that maintains two forms of external knowledge: Experiences, condition-action tactics distilled by contrasting rollouts of the same task, and Skills, multi-step procedures with explicit activation and termination conditions. Three designs couple the two streams. Experiences can be anchored to a Skill, appearing only while it is active rather than once per task. A Contrastive Utility Score estimates each Experience's effect by randomly withholding it across rollouts of the same task, separating its contribution from task difficulty, and Experiences with consistently positive utility are consolidated into the Skills they support. Across five spatial benchmarks and four backbones, SpatialCraft achieves the best accuracy in all 20 settings, showing that a frozen agent can learn to orchestrate spatial tools from its own experience.
+
+---
+
+*Source: [arXiv](https://arxiv.org/abs/2611.31475)*
